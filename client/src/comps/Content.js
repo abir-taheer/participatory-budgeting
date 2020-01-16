@@ -1,5 +1,6 @@
 import React from "react";
 import {Switch, Route} from "react-router-dom";
+import {AuthButton} from "./AuthButton";
 
 export const Content = (props) => {
 
@@ -8,6 +9,7 @@ export const Content = (props) => {
 			<Switch>
 				<Route path={"/"} component={Hello} exact/>
 			</Switch>
+			<AuthButton/>
 		</div>
 	)
 };

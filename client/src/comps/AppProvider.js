@@ -17,6 +17,7 @@ export class AppProvider extends React.Component {
 		this.updateState = this.updateState.bind(this);
 		this.state = {
 			initialized: false,
+			updateState: this.updateState,
 			error: false
 		};
 

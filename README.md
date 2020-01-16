@@ -1,2 +1,2 @@
 # quicker-picker-upper
-Template for quick nodejs/react development
+Site for voting on budgeting proposals

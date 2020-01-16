@@ -1,5 +1,7 @@
 const chokidar = require('chokidar');
 const cp = require("child_process");
+const dotenv = require("dotenv");
+dotenv.config();
 
 let react_process = cp.spawn("npm", ["start"], {cwd: "./client/"});
 let index_process = cp.fork("./index.js");
