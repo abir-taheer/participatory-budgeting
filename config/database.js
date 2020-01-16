@@ -38,11 +38,19 @@ const sequelize = new Database(
 	sequelize_options
 );
 
+const Candidates = require("./../schemas/candidates")(sequelize, Database);
+const Votes = require("./../schemas/votes")(sequelize, Database);
+const Vote_Data = require("./../schemas/vote_data")(sequelize, Database);
+
+Vote_Data.belongsTo(Votes);
 
 sequelize.sync(
 	// {force: true}
 	);
 
 module.exports = {
-	sequelize
+	sequelize,
+	Candidates,
+	Votes,
+	Vote_Data
 };
