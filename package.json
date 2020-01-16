@@ -1,0 +1,39 @@
+{
+  "name": "quicker-picker-upper",
+  "version": "1.0.0",
+  "description": "Template for quick nodejs/react development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm install && cd client && npm install",
+    "start": "node index",
+    "dev": "node hotReloadDev",
+    "build": "npm install && cd client && npm install && npm run build",
+    "heroku-postbuild": "npm run build",
+    "create-env": "printenv > .env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abir-taheer/quicker-picker-upper.git"
+  },
+  "author": "Abir Taheer",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/abir-taheer/quicker-picker-upper/issues"
+  },
+  "homepage": "https://github.com/abir-taheer/quicker-picker-upper#readme",
+  "dependencies": {
+    "body-parser": "latest",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-session": "^1.17.0",
+    "morgan": "^1.9.1",
+    "sequelize": "^5.21.3",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "chokidar": "latest"
+  }
+}

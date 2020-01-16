@@ -1,0 +1,26 @@
+.App {
+  min-height: 100vh;
+}
+
+.NavDrawer {
+  border-right: 0 !important;
+}
+
+.DrawerContent a {
+  text-decoration: none;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UnstyledLink {
+  text-decoration-line: unset;
+  color: unset;
+}
