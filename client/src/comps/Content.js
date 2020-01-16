@@ -1,19 +1,15 @@
 import React from "react";
 import {Switch, Route} from "react-router-dom";
 import {AuthButton} from "./AuthButton";
+import {Options} from "../pages/Options";
 
 export const Content = (props) => {
 
 	return (
 		<div>
 			<Switch>
-				<Route path={"/"} component={Hello} exact/>
+				<Route path={"/"} component={Options} exact/>
 			</Switch>
-			<AuthButton/>
 		</div>
 	)
 };
-
-function Hello() {
-	return <h1>Hello World!</h1>;
-}

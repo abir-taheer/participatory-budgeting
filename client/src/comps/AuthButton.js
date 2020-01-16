@@ -31,7 +31,7 @@ export const AuthButton = props => {
 	return (
 		<GoogleLogin
 			clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID || ""}
-			buttonText="Login with Google"
+			buttonText={context.signed_in ? "You're signed in!" : "Login with Google"}
 			onSuccess={onSuccess}
 			onFailure={console.log}
 			cookiePolicy={'single_host_origin'}
