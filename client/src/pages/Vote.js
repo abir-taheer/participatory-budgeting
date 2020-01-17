@@ -40,6 +40,7 @@ export const Vote = props => {
 			{hasVoted &&
 				<div>
 					<h2 style={{textAlign: "center"}}>You've voted {context.name.split(" ")[0]}!</h2>
+					<p style={{textAlign: "center"}}>Pick up your sticker from the first floor!</p>
 					<img
 						src={"https://media.giphy.com/media/Quyiuo4h1wqBYs5jrh/giphy.gif"}
 						alt={"Thank you image"}
