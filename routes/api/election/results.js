@@ -52,7 +52,7 @@ const getWinner = (votes_count, total_votes) => {
 
 
 router.get("/", async (req, res) => {
-	if(new Date("Fri, 17 Jan 2020 19:50:05 GMT") > new Date()){
+	if(new Date("Fri, 17 Jan 2020 22:00:11 GMT") > new Date()){
 		// the election isn't over yet and only calculate the results if this person has sufficient permissions
 		if(! req.session.signed_in )
 			return res.json({

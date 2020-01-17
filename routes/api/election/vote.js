@@ -3,7 +3,7 @@ const {Votes, Vote_Data} = require("./../../../config/database");
 
 router.post("/", async (req, res) => {
 	let selections = req.body.selections;
-	if(new Date("Fri, 17 Jan 2020 19:50:05 GMT") < new Date())
+	if(new Date("Fri, 17 Jan 2020 22:00:11 GMT") < new Date())
 		return res.json({
 			success: false,
 			error: "The period for voting is over"

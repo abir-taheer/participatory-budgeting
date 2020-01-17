@@ -33,11 +33,11 @@ export const Vote = props => {
 				<h1>You need to be signed in to vote!</h1>
 			}
 
-			{!waiting && ! hasVoted && new Date("Fri, 17 Jan 2020 19:50:05 GMT") > new Date() &&
+			{!waiting && ! hasVoted && new Date("Fri, 17 Jan 2020 22:00:11 GMT") > new Date() &&
 				<VoteForm/>
 			}
 
-			{!waiting && ! hasVoted && new Date("Fri, 17 Jan 2020 19:50:05 GMT") < new Date() &&
+			{!waiting && ! hasVoted && new Date("Fri, 17 Jan 2020 22:00:11 GMT") < new Date() &&
 				<div>
 					<p style={{textAlign: "center"}}>The period for voting is over</p>
 					<Link to={"/results"} className={["UnstyledLink"]}>
