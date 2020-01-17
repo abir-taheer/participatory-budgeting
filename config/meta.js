@@ -1,5 +1,5 @@
 const getOGTitle = (path) => {
-	return "title";
+	return "Stuyvesant Participatory Voting";
 };
 
 const getOGType = (path) => {
