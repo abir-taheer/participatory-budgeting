@@ -1,7 +1,7 @@
 import React from "react";
 import {Switch, Route} from "react-router-dom";
-import {AuthButton} from "./AuthButton";
 import {Options} from "../pages/Options";
+import {Vote} from "../pages/Vote";
 
 export const Content = (props) => {
 
@@ -9,6 +9,7 @@ export const Content = (props) => {
 		<div>
 			<Switch>
 				<Route path={"/"} component={Options} exact/>
+				<Route path={"/vote"} component={Vote} exact/>
 			</Switch>
 		</div>
 	)

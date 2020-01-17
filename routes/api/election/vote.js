@@ -9,7 +9,7 @@ router.post("/", async (req, res) => {
 			error: "You need to be signed in to vote!"
 		});
 
-	let find_vote = Votes.findOne({where: {email: req.session.email || ""}});
+	let find_vote = await Votes.findOne({where: {email: req.session.email || ""}});
 	if(find_vote)
 		return res.json({
 			success: false,
