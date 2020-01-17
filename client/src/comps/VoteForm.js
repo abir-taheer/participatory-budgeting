@@ -18,9 +18,7 @@ import {shuffle} from "../pages/Options";
 
 export const VoteForm = (props) => {
 	const context = React.useContext(AppContext);
-
-	shuffle(proposals);
-
+	
 	const sendVote = (selections) => {
 		fetch("/api/election/vote", {
 			method: "POST",
