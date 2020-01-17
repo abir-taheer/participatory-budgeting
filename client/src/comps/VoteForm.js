@@ -65,7 +65,7 @@ export const VoteForm = (props) => {
 	const [time, setTime] = React.useState(new Date());
 	setTimeout(setTime, 1000, new Date());
 
-	let start = new Date(process.env.REACT_APP_VOTING_START ||"Fri, 17 Jan 2020 15:20:00 GMT");
+	let start = new Date(process.env.REACT_APP_VOTING_START ||"Fri, 17 Jan 2020 13:45:49 GMT");
 	let diff = start - time;
 	if(time < start)
 		return (
@@ -75,7 +75,7 @@ export const VoteForm = (props) => {
 				</h2>
 
 				<p>
-					Voting will happen from periods 4-8.
+					Voting will happen from periods 2-9.
 				</p>
 				<p>
 					Come back in {Math.floor(diff / (1000 * 60 * 60))}h {Math.floor((diff %  (1000 * 60 * 60)) / (60 * 1000))}m {Math.floor((diff %  (1000 * 60 )) / (1000 ))}s
