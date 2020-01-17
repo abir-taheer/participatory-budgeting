@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 
+.AppBar {
+  background-color: #d63031;
+}
+
 .App-logo {
   height: 40vmin;
 }
