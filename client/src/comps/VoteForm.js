@@ -64,8 +64,31 @@ export const VoteForm = (props) => {
 		setItems(new_items);
 	};
 
+	const [time, setTime] = React.useState(new Date());
+	setTimeout(setTime, 1000, new Date());
+
+	let start = new Date(process.env.REACT_APP_VOTING_START ||"Fri, 17 Jan 2020 15:20:00 GMT");
+	let diff = start - time;
+	if(time < start)
+		return (
+			<div style={{textAlign: "center"}}>
+				<h2>
+					Voting hasn't started yet.
+				</h2>
+
+				<p>
+					Voting will happen from periods 4-8.
+				</p>
+				<p>
+					Come back in {Math.floor(diff / (1000 * 60 * 60))}h {Math.floor((diff %  (1000 * 60 * 60)) / (60 * 1000))}m {Math.floor((diff %  (1000 * 60 )) / (1000 ))}s
+				</p>
+			</div>
+		);
+
 	return (
 		<div>
+			<h2 style={{textAlign: "center"}}>Rank your choices:</h2>
+			<p style={{textAlign: "center"}}>Drag and drop the following in your order of preference</p>
 			<List twoLine>
 				<Reorder
 					reorderId="my-list" // Unique ID that is used internally to track this list (required)

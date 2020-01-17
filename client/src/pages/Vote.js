@@ -25,7 +25,7 @@ export const Vote = props => {
 			});
 
 	return (
-		<Card style={{width: "95vw", marginLeft: "2.5vw", padding: "1rem"}}>
+		<Card style={{width: "95vw", marginLeft: "2.5vw", padding: "2rem"}}>
 			<Link to={"/"} className={["UnstyledLink"]}>
 				<Button> &lt;- Back to Overview</Button>
 			</Link>
