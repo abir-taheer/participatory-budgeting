@@ -61,7 +61,7 @@ export const Results = props => {
 					data.push(<SimpleListItem
 						key={id}
 						text={proposals[Number(id)].name}
-						secondaryText={`${round.count[id]} votes - ${Math.round(100 * (round.count[id] / round.votes_counted)) / 100}%`}
+						secondaryText={`${round.count[id]} votes - ${Math.round(10000 * (round.count[id] / round.votes_counted)) / 100}%`}
 					/>)
 				}
 
